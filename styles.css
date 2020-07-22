@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+h4{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: black;
+}
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 38px;
+}
+.btn a{
+	display: block;
+	width: 180px;
+	height: 35px;
+	border: 2px solid red;
+	line-height: 35px;
+	margin: 25px auto 0;
+	color: red;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+
+
+}
+.container{
+	position: relative;
+}
+.navbar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo a{
+	font-family: sans-serif;
+	font-size: 32px;
+	color: #fb2274;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+/*Image*/
+.image{
+	background: url('pic.jpg') no-repeat top center;
+	background-size: cover; 
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content{
+	text-align: center;
+	color: #fff;
+}
+.content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+.content h1 span{
+	color: yellowgreen;
+}
+
+/* About us*/
+.about,
+.services,
+.contactus,
+.ourteam{
+	padding: 5% 10%;
+	text-align: center;
+}
+/* Services*/
+
+.services{
+	background: #f5f5f5;
+}
+
+.diff_services {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff_services .diff_services_item {
+    width: 30%;
+}
+
+.diff_services .diff_services_item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.diff_services .diff_services_item h3 {
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+
+/* Contact us */
+.form_wrapper .form_input{
+	margin-bottom: 15px;
+}
+
+.form_wrapper .form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px; 
+	border: 1px solid #ccc;
+}
+
+.form_wrapper .form_input textarea{
+	width: 250px;
+	padding: 12px 20px; 
+	height: 80px;
+	resize: none;
+	border: 1px solid  #ccc;
+}
+
+/* our team */
+.ourteam{
+	background: #f5f5f5;
+}
+
+.ourteam_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.ourteam_wrapper .team_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	position: relative;
+}
+
+.ourteam_wrapper .team_members img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.ourteam_wrapper .team_members:hover img{
+	transform: scale(1.1);
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	padding: 20px 0;
+
+}
+
+.footer a{
+	color: #fff;
+}
+
+@media (max-width: 720px){
+
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+
+}
